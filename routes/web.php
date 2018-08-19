@@ -32,3 +32,6 @@ Route::get('users/{user}/edit', 'UsersController@edit')->name('users.edit');
 
 //用户列表
 Route::get('index', 'UsersController@index')->name('users.index');
+
+//激活账户
+Route::get('signup/confirm/{token}', 'UsersController@confirmEmail')->name('confirm_email');
