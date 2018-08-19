@@ -6,7 +6,7 @@
   <h1>所有用户</h1>
   <ul class="users">
     @foreach ($users as $user)
-      @include('shared._user_info')
+      @include('users._user')
     @endforeach
   </ul>
 
